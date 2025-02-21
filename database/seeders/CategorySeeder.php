@@ -13,12 +13,10 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        Category::create(['name' => 'Electronics', 'slug' => 'electronics']);
-        Category::create(['name' => 'Fasion', 'slug' => 'fasion']);
-        Category::create(['name' => 'Books', 'slug' => 'books']);
-        Category::create(['name' => 'Men', 'slug' => 'men']);
-        Category::create(['name' => 'Woman', 'slug' => 'woman']);
-        Category::create(['name' => 'Beauty', 'slug' => 'beauty ']);
-        Category::create(['name' => 'Home & Kitchen', 'slug' => 'home & kitchen']);
+        $categories = ['Electronics', 'Fashion', 'Men', 'Woman', 'Books', 'Home & Kitchen', 'Beauty'];
+
+        foreach ($categories as $category) {
+            Category::create(['name' => $category, 'slug' => strtolower(str_replace('', '-', $category))]);
+        }
     }
 }

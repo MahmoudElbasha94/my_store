@@ -43,7 +43,7 @@ class ProductSeeder extends Seeder
             'description' => 'Stylish and comfortable sneakers with Max Air cushioning for all-day comfort. Available in multiple colors.',
             'price' => 4200,
             'stock' => 2
-        ])->categories()->attach([2, 4]);
+        ])->categories()->attach(1);
 
         Product::create([
             'name' => 'Instant Pot Duo 7-in-1',
@@ -51,7 +51,7 @@ class ProductSeeder extends Seeder
             'description' => 'A versatile multi-cooker that combines 7 appliances in 1: pressure cooker, slow cooker, rice cooker, steamer, sauté pan, yogurt maker, and warmer.',
             'price' => 5400,
             'stock' => 1
-        ])->categories()->attach(7);
+        ])->categories()->attach(4);
 
         Product::create([
             'name' => 'Canon EOS R6 Mirrorless Camera',
@@ -75,7 +75,7 @@ class ProductSeeder extends Seeder
             'description' => 'A powerful cordless vacuum with intelligent suction, LCD screen, and up to 60 minutes of runtime. Ideal for cleaning carpets and hard floors.',
             'price' => 60000,
             'stock' => 4
-        ])->categories()->attach(7);
+        ])->categories()->attach(4);
 
         Product::create([
             'name' => 'Samsung Galaxy S23 Ultra',
@@ -91,7 +91,7 @@ class ProductSeeder extends Seeder
             'description' => 'A fan-favorite mascara that volumizes, lengthens, and separates lashes for a dramatic look.',
             'price' => 800,
             'stock' => 40
-        ])->categories()->attach(6);
+        ])->categories()->attach(5);
 
         Product::create([
             'name' => 'Adidas Ultraboost 22 for woman',
@@ -99,6 +99,6 @@ class ProductSeeder extends Seeder
             'description' => 'Running shoes with Boost midsole technology for maximum energy return and a lightweight, breathable design.',
             'price' => 5400,
             'stock' => 15
-        ])->categories()->attach([2, 5]);
+        ])->categories()->attach(2);
     }
 }

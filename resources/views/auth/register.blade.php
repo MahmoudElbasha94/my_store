@@ -51,5 +51,4 @@
     ]"
         submitButtonName="ٌRegister"
     />
-
 </x-layout.app>

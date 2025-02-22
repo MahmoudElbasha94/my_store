@@ -31,9 +31,8 @@
 
             <button type="submit" class="btn btn-primary w-100">{{ $submitButtonName ?? 'Send' }}</button>
         </form>
-
         <p class="text-center mt-3">
-            Already have an account? <a href="{{ route('auth.login.form') }}">Login</a>
+            {{ $redirectLinkMessage?? 'Already have an account?' }} <a href="{{ $gotToLoginOrRegisterLink ?? route('auth.login.form') }}">{{ $linkName ?? 'Login' }}</a>
         </p>
     </div>
 </div>
